@@ -1,0 +1,7 @@
+D:\Distrib\Adel\Прога\Lesson_30.09\Lesson3\bin\Debug\Lesson3.exe.config
+D:\Distrib\Adel\Прога\Lesson_30.09\Lesson3\bin\Debug\Lesson3.exe
+D:\Distrib\Adel\Прога\Lesson_30.09\Lesson3\bin\Debug\Lesson3.pdb
+D:\Distrib\Adel\Прога\Lesson_30.09\Lesson3\obj\Debug\Lesson3.csproj.AssemblyReference.cache
+D:\Distrib\Adel\Прога\Lesson_30.09\Lesson3\obj\Debug\Lesson3.csproj.CoreCompileInputs.cache
+D:\Distrib\Adel\Прога\Lesson_30.09\Lesson3\obj\Debug\Lesson3.exe
+D:\Distrib\Adel\Прога\Lesson_30.09\Lesson3\obj\Debug\Lesson3.pdb
