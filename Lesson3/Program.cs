@@ -99,17 +99,24 @@ namespace Lesson_3
             {
                 int a = Convert.ToInt32(Console.ReadLine());
                 Console.Write("Достоинство карты: ");
-                switch (a)
+                if (a > 5 & a < 15)
                 {
-                    case 6: Console.WriteLine("6"); break;
-                    case 7: Console.WriteLine("7"); break;
-                    case 8: Console.WriteLine("8"); break;
-                    case 9: Console.WriteLine("9"); break;
-                    case 10: Console.WriteLine("10"); break;
-                    case 11: Console.WriteLine("Jack"); break;
-                    case 12: Console.WriteLine("Queen"); break;
-                    case 13: Console.WriteLine("King"); break;
-                    case 14: Console.WriteLine("Ace"); break;
+                    switch (a)
+                    {
+                        case 6: Console.WriteLine("6"); break;
+                        case 7: Console.WriteLine("7"); break;
+                        case 8: Console.WriteLine("8"); break;
+                        case 9: Console.WriteLine("9"); break;
+                        case 10: Console.WriteLine("10"); break;
+                        case 11: Console.WriteLine("Jack"); break;
+                        case 12: Console.WriteLine("Queen"); break;
+                        case 13: Console.WriteLine("King"); break;
+                        case 14: Console.WriteLine("Ace"); break;
+                    }
+                }
+                else 
+                {
+                    Console.WriteLine("Такой карты нет в колоде из 36 карт");
                 }
             }
             catch (FormatException)
@@ -126,19 +133,20 @@ namespace Lesson_3
             Console.WriteLine("Упр 3");
             Console.WriteLine("Работа с таблицей");
             string word = Console.ReadLine();
+            word = word.ToLower();
             switch (word)
             {
-                case "Jabroni":
+                case "jabroni":
                     Console.WriteLine("Patrol Tequila"); break;
-                case "School Counselor":
+                case "school counselor":
                     Console.WriteLine("Anything with Alcohol"); break;
-                case "Programmer":
+                case "programmer":
                     Console.WriteLine("Hipster Craft Beer"); break;
-                case "Bike Gang Member":
+                case "bike gang member":
                     Console.WriteLine("Moonshine"); break;
-                case "Politican":
+                case "politican":
                     Console.WriteLine("Your tax dollar"); break;
-                case "Rapper":
+                case "rapper":
                     Console.WriteLine("Cristal"); break;
                 default: Console.WriteLine("Beer"); break;
 
@@ -170,7 +178,37 @@ namespace Lesson_3
 
             Console.WriteLine("Упр 5");
             Console.WriteLine("Проверить весь массив строк");
-
+            string[] str;
+            string[] str_2;
+            int count = 0;
+            string s;
+            str = new string[count];
+            do
+            {
+                Console.WriteLine();
+                Console.WriteLine("Введите строку для добавления в массив");
+                Console.WriteLine("Если вы ввели все строки, нажмите Enter для продолжения");
+                s = Console.ReadLine();
+                if (s != "")
+                {
+                    count++;
+                    str_2 = new string[count];
+                    for (int z = 0; z < str_2.Length - 1; z++)
+                        str_2[z] = str[z];
+                    str_2[count - 1] = s;
+                    str = str_2;
+                }
+                Console.WriteLine();
+            } while (s != "");
+            int res = 0;
+            foreach (string n in str)
+            {
+                if (n == "Hello Kitty" || n == "Barbie doll")
+                {
+                    res++;
+                }
+            }
+            Console.WriteLine(res);
             Console.WriteLine();
             Console.WriteLine("Нажмите любую кнопку для завершения");
             Console.ReadKey();
